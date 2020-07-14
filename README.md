@@ -1,10 +1,9 @@
-## image-render-sample
-
+# HMS Imagekit Render Demo
 
 ## Table of Contents
 
  * [Introduction](#introduction)
- * [Getting Started](#Getting-Started)
+ * [Getting Started](#getting-started)
  * [Supported Environments](#supported-environments)
  * [Result](#result)
  * [License](#license)
