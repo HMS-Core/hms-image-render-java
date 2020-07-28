@@ -65,7 +65,9 @@ public class ImageKitRenderDemoActivity extends Activity {
     private ImageRenderImpl imageRenderAPI;
 
     // Resource folder, which can be set as you want.
-    private static final String SOURCE_PATH = Environment.getExternalStorageDirectory() + File.separator + "lockscreen" + File.separator + "fastDir";
+    private static final String SOURCE_PATH = "sources";
+
+    private String sourcePath;
 
     /**
      * requestCode for applying for permissions.
@@ -79,6 +81,7 @@ public class ImageKitRenderDemoActivity extends Activity {
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_FULLSCREEN);
         setContentView(R.layout.activity_image_kit_demo);
+        sourcePath = getFilesDir().getPath() + File.separator + SOURCE_PATH;
         initView();
         int permissionCheck = ContextCompat.checkSelfPermission(ImageKitRenderDemoActivity.this, Manifest.permission.WRITE_EXTERNAL_STORAGE);
         if (permissionCheck == PackageManager.PERMISSION_GRANTED) {
@@ -114,7 +117,7 @@ public class ImageKitRenderDemoActivity extends Activity {
      * @param animationName animationName
      */
     private void changeAnimation(String animationName) {
-        if(!Utils.copyAssetsFilesToDirs(this, animationName, SOURCE_PATH)){
+        if(!Utils.copyAssetsFilesToDirs(this, animationName, sourcePath)){
             Log.e(TAG, "copy files failure, please check permissions");
             return;
         }
@@ -125,7 +128,7 @@ public class ImageKitRenderDemoActivity extends Activity {
         if(contentView.getChildCount() > 0) {
             contentView.removeAllViews();
             imageRenderAPI.removeRenderView();
-            int initResult = imageRenderAPI.doInit(SOURCE_PATH, getAuthJson());
+            int initResult = imageRenderAPI.doInit(sourcePath, getAuthJson());
             Log.i(TAG, "DoInit result == " + initResult);
             if (initResult == 0) {
                 // Obtain the rendered view.
@@ -162,17 +165,17 @@ public class ImageKitRenderDemoActivity extends Activity {
     private void initData() {
         // Absolute path of the resource files.
 
-        if (!Utils.createResourceDirs(SOURCE_PATH)) {
+        if (!Utils.createResourceDirs(sourcePath)) {
             Log.e(TAG, "Create dirs fail, please check permission");
         }
 
-        if (!Utils.copyAssetsFileToDirs(this, "AlphaAnimation" + File.separator + "aixin7.png", SOURCE_PATH + File.separator + "aixin7.png")) {
+        if (!Utils.copyAssetsFileToDirs(this, "AlphaAnimation" + File.separator + "aixin7.png", sourcePath + File.separator + "aixin7.png")) {
             Log.e(TAG, "Copy resource file fail, please check permission");
         }
-        if (!Utils.copyAssetsFileToDirs(this, "AlphaAnimation" + File.separator + "bj.jpg", SOURCE_PATH + File.separator + "bj.jpg")) {
+        if (!Utils.copyAssetsFileToDirs(this, "AlphaAnimation" + File.separator + "bj.jpg", sourcePath + File.separator + "bj.jpg")) {
             Log.e(TAG, "Copy resource file fail, please check permission");
         }
-        if (!Utils.copyAssetsFileToDirs(this, "AlphaAnimation" + File.separator + "manifest.xml", SOURCE_PATH + File.separator + "manifest.xml")) {
+        if (!Utils.copyAssetsFileToDirs(this, "AlphaAnimation" + File.separator + "manifest.xml", sourcePath + File.separator + "manifest.xml")) {
             Log.e(TAG, "Copy resource file fail, please check permission");
         }
     }
@@ -206,7 +209,7 @@ public class ImageKitRenderDemoActivity extends Activity {
             Log.e(TAG, "initRemote fail, please check kit version");
             return;
         }
-        int initResult = imageRenderAPI.doInit(SOURCE_PATH, getAuthJson());
+        int initResult = imageRenderAPI.doInit(sourcePath, getAuthJson());
         Log.i(TAG, "DoInit result == " + initResult);
         if (initResult == 0) {
             // Obtain the rendered view.
