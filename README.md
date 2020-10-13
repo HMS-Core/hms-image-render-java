@@ -1,15 +1,16 @@
-# HMS Imagekit Render Demo
+## image-render-sample
+
 
 ## Table of Contents
 
  * [Introduction](#introduction)
- * [Getting Started](#getting-started)
+ * [Getting Started](#Getting-Started)
  * [Supported Environments](#supported-environments)
  * [Result](#result)
  * [License](#license)
 
 ## Introduction
-The Image Render service provides basic and advanced animation effects to help you reproduce image contents in an efficient way.
+The Image Render service provides basic and advanced animation effects to help you reproduce image contents in an efficient way. This sample code encapsulates APIs of the HUAWEI Image Kit Render Service, it provides a sample programs for your reference or usage.
 
 1. Supports five basic animations and any of their combination.
 
@@ -18,7 +19,7 @@ The Image Render service provides basic and advanced animation effects to help y
 For details, please refer to [XML Syntax Specifications for Image Render](https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides/xml-introduction-0000001050439245).
 
 ## Getting Started
-1. Check whether the Android studio development environment is ready. Open the sample code project directory with file "build.gradle" in Android Studio. Run TestApp on your device or simulator which have installed latest Huawei Mobile Service(HMS).
+1. Check whether the Android studio development environment is ready. Open the sample code project directory with file "build.gradle" in Android Studio. Run TestApp on your divice or simulator which have installed latest Huawei Mobile Service(HMS).
 2. Register a [HUAWEI account](https://developer.huawei.com/consumer/en/).
 3. Create an app and configure the app information in AppGallery Connect. 
    See details: [HUAWEI Image Service Development Preparation](https://developer.huawei.com/consumer/en/doc/development/HMSCore-Guides/config-agc-0000001050199019)
@@ -34,12 +35,12 @@ For details, please refer to [XML Syntax Specifications for Image Render](https:
 
 - Gradle 3.3.2.
 
-- HMS Core (APK) 4.0.2.300 or later.
+- HMS Core (APK) 4.0.2.300 or later(applicable to the SDK, but not the fallback-SDK).
 
 
 ## Result
 
-   <img src="./ScreenShot.jpg" width = 30% height = 30% >
+   <img src="./ScreenShot.PNG" width = 30% height = 30%>
 
 ##  License
 

@@ -1,6 +1,13 @@
 <resources>
     <string name="app_name">imageRender示例</string>
     <string name="demo_title">imageRender示例</string>
-    <string name="action_play_animation">播放动画</string>
-    <string name="action_stop_animation">停止动画</string>
+    <string name="demo_title1">imageRender示例1</string>
+    <string name="action_play_animation">播放</string>
+    <string name="action_stop_animation">停止</string>
+    <string name="action_pause_animation">暂停</string>
+    <string name="action_restart_animation">恢复</string>
+    <string name="action_start_record">开始录制</string>
+    <string name="action_stop_record">结束录制</string>
+    <string name="action_set_variable">跑马灯可见性</string>
+    <string name="action_nextpage">下一页</string>
 </resources>

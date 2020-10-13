@@ -18,6 +18,9 @@ package com.huawei.image.render.sample.util;
 import android.content.Context;
 import android.util.Log;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -118,5 +121,25 @@ public class Utils {
             }
         }
         return true;
+    }
+
+    /**
+     * Add authentication parameters.
+     *
+     * @return JsonObject of Authentication parameters.
+     */
+    public static JSONObject getAuthJson() {
+        JSONObject authJson = new JSONObject();
+        try {
+            authJson.put("projectId", "projectId-test");
+            authJson.put("appId", "appId-test");
+            authJson.put("authApiKey", "authApiKey-test");
+            authJson.put("clientSecret", "clientSecret-test");
+            authJson.put("clientId", "clientId-test");
+            authJson.put("token", "token-test");
+        } catch (JSONException e) {
+            Log.w(TAG, "Get authJson fail, please check auth info");
+        }
+        return authJson;
     }
 }

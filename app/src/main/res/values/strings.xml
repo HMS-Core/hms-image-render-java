@@ -1,6 +1,13 @@
 <resources>
     <string name="app_name">ImageRenderSample</string>
     <string name="demo_title">ImageRenderSample</string>
-    <string name="action_play_animation">playAnimation</string>
-    <string name="action_stop_animation">stopAnimation</string>
+    <string name="demo_title1">ImageRenderSample1</string>
+    <string name="action_play_animation">play</string>
+    <string name="action_stop_animation">stop</string>
+    <string name="action_pause_animation">pause</string>
+    <string name="action_restart_animation">resume</string>
+    <string name="action_start_record">startRecord</string>
+    <string name="action_stop_record">stopRecord</string>
+    <string name="action_set_variable">setVar</string>
+    <string name="action_nextpage">nextPage</string>
 </resources>
