@@ -1,10 +1,9 @@
-## image-render-sample
-
+# HMS ImageKit Render Sample for Java
 
 ## Table of Contents
 
  * [Introduction](#introduction)
- * [Getting Started](#Getting-Started)
+ * [Getting Started](#getting-started)
  * [Supported Environments](#supported-environments)
  * [Result](#result)
  * [License](#license)
@@ -55,4 +54,3 @@ If you run into a bug in our samples, please submit an [issue](https://github.co
 ##  License
 
 ImageRenderSample is licensed under the [Apache License, version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
-
