@@ -39,7 +39,7 @@ For details, please refer to [XML Syntax Specifications for Image Render](https:
 
 ## Result
 
-   <img src="./ScreenShot.PNG" width = 30% height = 30%>
+   <img src=https://github.com/HMS-Core/hms-image-render-java/blob/master/render.gif width = 30% height = 30%>
 
 ## Question or issues
 If you want to evaluate more about HMS Core, [r/HMSCore on Reddit](https://www.reddit.com/r/HuaweiDevelopers/) is for you to keep up with latest news about HMS Core, and to exchange insights with other developers.
