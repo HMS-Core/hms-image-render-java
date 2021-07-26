@@ -1,5 +1,7 @@
 # 华为图像服务场景动效Java示例代码
 
+[English](README.md) | 中文
+
 ## 目录
 
  * [简介](#简介)
@@ -9,18 +11,18 @@
  * [授权许可](#授权许可)
 
 ## 简介
-场景动效服务提供基础动效和高级动效，帮助您实现图片内容高效再生产。本示例代码对华为图像服务场景动效接口进行封装，包含丰富的示例程序，方便您参考或直接使用。</br>
+场景动效服务提供基础动效和高级动效，帮助您实现图片内容高效再生产。本示例代码对华为图像服务场景动效接口进行封装，包含丰富的示例程序，方便您参考或直接使用。
 1. 提供5种基础动效，并支持多动效叠加使用。
 
 2. 提供9种效果炫酷的高级动效，并支持用户交互。
 
-更多信息请参见[场景动效xml规范说明文档](https://developer.huawei.com/consumer/cn/doc/development/HMSCore-Guides/xml-introduction-0000001050439245).
+更多信息请参见[场景动效xml规范说明文档](https://developer.huawei.com/consumer/cn/doc/development/Media-Guides/xml-introduction-0000001050439245?ha_source=hms1).
 
 ## 开发准备
 1. 检查Android Studio开发环境是否就绪。将示例工程导入Android Studio（3.0及以上版本）中。
 2. 在Android Studio中打开示例工程项目级build.gradle文件，并在您已安装最新版华为移动服务的设备或模拟器上运行测试应用。
 3. 注册[华为帐号](https://developer.huawei.com/consumer/cn/)。
-4. 创建应用并在AppGallery Connect中配置相关信息。具体请参考[开发准备](https://developer.huawei.com/consumer/cn/doc/development/HMSCore-Guides/config-agc-0000001050199019)。
+4. 创建应用并在AppGallery Connect中配置相关信息。具体请参考[开发准备](https://developer.huawei.com/consumer/cn/doc/development/Media-Guides/config-agc-0000001050199019?ha_source=hms1)。
 5. To build this demo, please first import the demo in the Android Studio (3.x+)。
 6. 在Android设备或模拟器上运行您的应用。
 
@@ -38,7 +40,7 @@
 
 ## 运行结果
 
-   <img src=https://github.com/HMS-Core/hms-image-render-java/blob/master/render.gif width = 30% height = 30%>
+   <img src=render.gif width = 30% height = 30%>
 
 ## 技术支持
 如果您对HMS Core还处于评估阶段，可在[Reddit社区](https://www.reddit.com/r/HuaweiDevelopers/)获取关于HMS Core的最新讯息，并与其他开发者交流见解。
